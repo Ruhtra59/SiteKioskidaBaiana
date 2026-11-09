@@ -1,0 +1,274 @@
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #fffaf0;
+}
+
+header {
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    background-color: rgb(255, 217, 0);
+}
+
+header #titulo {
+    font-family: 'WindSong', cursive;
+    font-weight: 500;
+
+    font-size: clamp(20px, 4vw, 45px);
+    white-space: nowrap;
+}
+
+header #logo {
+    height: clamp(75px, 12vw, 150px);
+}
+
+header .bloco_direita {
+    margin-left: auto;
+    margin-right: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+header .bloco_direita .botoes {
+    padding: 15px;
+    border-radius: 30px;
+
+    color: white;
+    background-color: rgb(165, 38, 0);
+}
+
+main .introducao {
+    padding: 65px 20px;
+
+    text-align: center;
+
+    background-color: rgb(165, 38, 0);
+    color: white;
+}
+
+main .introducao h2 {
+    font-size: clamp(30px, 4vw, 45px);
+    margin-bottom: 20px;
+}
+
+main .introducao p {
+    max-width: 750px;
+    margin: auto;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+main .historia {
+    max-width: 1150px;
+    margin: auto;
+
+    padding: 60px 25px;
+}
+
+main .historia .etapa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 45px;
+
+    margin-bottom: 55px;
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+main .historia .etapa .foto {
+    width: 42%;
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+main .historia .etapa .texto {
+    flex: 1;
+}
+
+main .historia .etapa .data {
+    color: rgb(165, 38, 0);
+
+    font-weight: 700;
+    font-size: 15px;
+}
+
+main .historia .etapa h2 {
+    color: rgb(120, 35, 0);
+
+    font-size: 27px;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+main .historia .etapa p {
+    color: #444;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+main .historia .etapa:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+main .historia .destaque {
+    background-color: rgb(255, 244, 204);
+
+    border: 2px solid rgb(255, 217, 0);
+}
+
+main .historia .destaque h2 {
+    font-size: 32px;
+}
+
+main .final {
+    padding: 70px 20px;
+
+    text-align: center;
+
+    background-color: rgb(255, 217, 0);
+}
+
+main .final h2 {
+    color: rgb(120, 35, 0);
+
+    font-size: clamp(27px, 4vw, 38px);
+}
+
+main .final p {
+    max-width: 750px;
+    margin: 20px auto;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    color: #444;
+}
+
+main .final h3 {
+    margin-top: 35px;
+
+    color: rgb(165, 38, 0);
+
+    font-size: 23px;
+}
+
+@media (max-width: 800px) {
+
+    header {
+        gap: 10px;
+    }
+
+    header .bloco_direita {
+        gap: 10px;
+        margin-right: 5px;
+    }
+
+    header .bloco_direita .botoes {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        padding: 10px;
+    }
+
+    header #logo {
+        height: 65px;
+    }
+
+    header #titulo {
+        font-size: 28px;
+    }
+
+    header .bloco_direita {
+        width: 100%;
+
+        margin: 10px 0;
+
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+    header .bloco_direita .botoes {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    main .introducao {
+        padding: 45px 20px;
+    }
+
+    main .historia {
+        padding: 30px 15px;
+    }
+
+    main .historia .etapa,
+    main .historia .etapa:nth-child(even) {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    main .historia .etapa .foto {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+    }
+
+    main .historia .etapa h2 {
+        font-size: 23px;
+    }
+
+    main .historia .etapa p {
+        font-size: 16px;
+    }
+
+    main .historia .destaque h2 {
+        font-size: 25px;
+    }
+
+    main .final {
+        padding: 45px 20px;
+    }
+
+    main .final p {
+        font-size: 16px;
+    }
+
+}

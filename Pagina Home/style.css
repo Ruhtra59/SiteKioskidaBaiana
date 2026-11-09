@@ -1,0 +1,323 @@
+html{
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+    body {
+        margin: 0;
+    }
+
+        header{
+            padding: 10px;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+
+            background-color: rgb(255, 217, 0);
+        }
+
+            header #titulo{
+                font-family: 'WindSong', cursive;
+                font-weight: 500;
+
+                font-size: clamp(20px, 4vw, 45px);
+                white-space: nowrap;
+            }
+
+            header #logo{
+                height: clamp(75px, 12vw, 150px);
+               
+            }
+
+            header .bloco_direita{
+                margin-left: auto;
+                margin-right: 20px;
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 50px;
+            }
+
+                header .bloco_direita .botoes{
+                    padding: 15px;
+                    border-radius: 30px;
+
+                    color: white;
+                    background-color: rgb(165, 38, 0);
+                }
+
+        main{
+             max-height:100%;
+        }
+    
+            main .carrosel .grupo_botoes {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                position: absolute;
+                bottom: 8cm;
+                left: 0;
+
+                width: 100%;
+            }
+
+                main .carrosel .grupo_botoes .botoes{
+                    margin:50px;
+                    padding: 15px;
+                    border-radius: 30px;
+
+                    background-color: rgb(255, 217, 0);
+                }
+
+            main .carrosel #moldura{
+                height: 15cm;
+                width: 100%;
+
+                object-fit: cover;
+            }
+
+            main .carrosel #BtAvanc{
+                margin-left:auto;
+            }
+
+            main .apresentacao {
+                padding: 60px 20px;
+                text-align: center;
+
+                background-color: #fffaf0;
+            }
+
+                main .apresentacao h2 {
+                    color: rgb(165, 38, 0);
+                    font-size: clamp(24px, 3vw, 36px);
+                    margin-bottom: 25px;
+                }
+
+                main .apresentacao p {
+                    max-width: 750px;
+                    margin: 15px auto;
+
+                    font-size: 18px;
+                    line-height: 1.7;
+                    color: #444;
+                }
+
+            main .atalhos {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: stretch;
+
+                gap: 30px;
+                padding: 50px 5%;
+                
+                background-color: #fff;
+            }
+
+                main .atalhos .cartao {
+                    flex: 1;
+                    max-width: 350px;
+                    min-height: 220px;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    padding: 25px;
+
+                    text-align: center;
+                    text-decoration: none;
+
+                    background-color: #fffaf0;
+                    border: 2px solid rgb(255, 217, 0);
+                    border-radius: 20px;
+
+                    color: #333;
+
+                    transition: transform 0.3s, background-color 0.3s;
+                }
+
+                    main .atalhos .cartao h2 {
+                        color: rgb(165, 38, 0);
+                        font-size: 23px;
+                    }
+
+                    main .atalhos .cartao p {
+                        line-height: 1.6;
+                        font-size: 16px;
+                    }
+
+                    main .atalhos .cartao span {
+                        margin-top: 15px;
+                        color: rgb(165, 38, 0);
+                        font-weight: 700;
+                    }
+
+                    main .atalhos .cartao:hover {
+                        transform: translateY(-8px);
+                        background-color: rgb(255, 244, 204);
+                    }
+        
+        footer {
+            background-color: rgb(90, 25, 0);
+            color: white;
+
+            text-align: center;
+        }            
+
+            footer .footer_conteudo {
+                padding: 35px 20px;
+            }
+    
+                footer .footer_conteudo h2 {
+                    font-family: 'WindSong', cursive;
+                    font-size: 35px;
+                    margin: 0;
+                }
+
+                footer .footer_conteudo p {
+                    color: #f5dfc7;
+                }
+            
+            footer .footer_links {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+
+                margin-top: 25px;
+            }
+
+                footer .footer_links a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                footer .footer_links a:hover {
+                    text-decoration: underline;
+                }
+
+            footer .direitos {
+                padding: 15px;
+                background-color: rgb(65, 18, 0);
+                font-size: 14px;
+            }
+
+
+@media (max-width: 800px) {
+
+    header {
+        gap: 10px;
+    }
+
+        header .bloco_direita {
+            gap: 15px;
+            margin-right: 5px;
+        }
+
+            header .bloco_direita .botoes {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+    main .carrosel #moldura {
+        height: 12cm;
+    }
+
+    main .atalhos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        main .atalhos .cartao {
+            width: 100%;
+            max-width: 450px;
+        }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+        header #logo {
+            height: 65px;
+        }
+
+        header #titulo {
+            font-size: 28px;
+        }
+
+        header .bloco_direita {
+            width: 100%;
+            margin: 10px 0;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+            header .bloco_direita .botoes {
+                padding: 10px;
+                font-size: 12px;
+            }
+
+    main .carrosel #moldura {
+        height: 300px;
+    }
+
+    main .carrosel .grupo_botoes {
+        bottom: auto;
+        top: 250px;
+    }
+
+        main .carrosel .grupo_botoes .botoes {
+            margin: 10px;
+            padding: 10px;
+        }
+
+    main .apresentacao {
+        padding: 35px 20px;
+    }
+
+        main .apresentacao p {
+            font-size: 16px;
+        }
+
+    main .atalhos {
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+         main .atalhos .cartao {
+            width: 90%;
+        }
+
+    footer .footer_links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+}
+
+        
+
+
+
+
+
+
+
+
+
+
+
+

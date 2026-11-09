@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrei, Arthur e Lucas">
+    <meta name="description" content="Página de Cardápio e Preços da empresa.">
+    
+    
+    <title>Preços e Cardápio | Kioski da Baiana</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../Pagina Home/img/Logos/LogoKioskiComFundo.png">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+
+        <img id="logo" src="../Pagina Home/img/Logos/LogoKioskiSemFundo.png" alt="Logo do Kioski da Baiana">
+
+        <h1 id="titulo">Kioski da Baiana</h1>
+
+        <div class="bloco_direita">
+
+            <a href="../Contato/index.html" class="botoes">Contato & Localização</a>
+
+            <a href="../index.html" class="botoes">Início</a>
+
+            <a href="../Sobre Nós/index.html" class="botoes">Sobre Nós</a>
+
+        </div>
+
+    </header>
+
+    <main>
+        <h1>Nosso Cardápio</h1>
+        <p class="subtitulo">Confira nossas marmitas e bebidas!</p>
+
+        <section>
+            <h2>Marmitex</h2>
+
+            <div class="item">
+                <div>
+                    <h3>Marmitex P</h3>
+                    <p>Aproximadamente 450g - 1 carne</p>
+                </div>
+                <span>R$ 16,00</span>
+            </div>
+
+            <div class="item">
+                <div>
+                    <h3>Marmitex M</h3>
+                    <p>Aproximadamente 700g - 2 carnes</p>
+                </div>
+                <span>R$ 19,00</span>
+            </div>
+
+            <div class="item">
+                <div>
+                    <h3>Marmitex G</h3>
+                    <p>Aproximadamente 1kg - 3 carnes</p>
+                </div>
+                <span>R$ 26,00</span>
+            </div>
+                <img src="./img/Marmitex caseiro com frango e salada.png"
+                    alt="Foto de uma marmita"
+                    class="imagem-secao">
+        </section>
+
+        <section>
+            <h2>Bebidas</h2>
+
+            <div class="item">
+                <p>Guaraná 2L</p>
+                <span>R$ 13,00</span>
+            </div>
+
+            <div class="item">
+                <p>Pepsi / Sukita 2L</p>
+                <span>R$ 12,00</span>
+            </div>
+
+            <div class="item">
+                <p>Guaraná / Pepsi 1L</p>
+                <span>R$ 9,00</span>
+            </div>
+
+            <div class="item">
+                <p>Pepsi / Guaraná 600mL</p>
+                <span>R$ 7,00</span>
+            </div>
+
+            <div class="item">
+                <p>Pepsi / Guaraná Lata Zero</p>
+                <span>R$ 5,00</span>
+            </div>
+
+            <div class="item">
+                <p>Pepsi / Guaraná Lata</p>
+                <span>R$ 5,00</span>
+            </div>
+
+            <div class="item">
+                <p>Água mineral 500mL</p>
+                <span>R$ 3,00</span>
+            </div>
+
+            <div class="item">
+                <p>Brahma / Skol</p>
+                <span>R$ 5,00</span>
+            </div>
+            
+            <img src="./img/bebidas.jpg"
+                alt="Foto de bebidas"
+                class="imagem-secao">
+
+        </section>
+
+        <section>
+            <h2>Informações de Entrega</h2>
+
+            <button onclick="alternarInformacoes()" id="botaoEntrega">
+                Ocultar informações
+            </button>
+
+            <div id="informacoes">
+                <p><strong>Taxa de entrega:</strong> R$ 3,00</p>
+                <p><strong>Pedidos e reservas:</strong> 8h às 10h30</p>
+                <p><strong>Horário de entrega:</strong> 11h às 12h</p>
+                <p><strong>Região:</strong> Zona sul do Rincão</p>
+
+                <p>Após as 10h30, pedidos somente no
+                   balcão até as 14h.</p>
+
+                <p>Pagamento das entregas somente
+                   em dinheiro ou Pix.</p>
+
+                <p>Pix antecipado com comprovante.</p>
+                <p>Cartão aceito somente no balcão.</p>
+
+                <p><strong>Funcionamento:</strong>
+                   Segunda a sábado, até as 14h.</p>
+            </div>
+            
+            <img src="./img/entrega.jpg"
+                alt="Entrega de marmitex"
+                class="imagem-secao">
+
+        </section>
+
+    </main>
+
+    <script src="./Carda.js"></script>
+</body>
+</html>
